@@ -2,54 +2,49 @@ import { Check, ArrowRight } from 'lucide-react';
 
 const plans = [
   {
-    name: 'Standaard',
-    price: '€1.250',
-    badge: 'Tot 6 gerechten',
+    name: 'Quick Scan',
+    price: '€495',
+    type: 'eenmalig',
     highlighted: false,
+    description: 'Weet waar je staat en waar de winst zit.',
     features: [
-      '1 menukaart',
-      'Receptuurkaarten per gerecht',
-      'Kostprijsberekening + food cost',
-      'Verkoopprijsadvies',
-      'Mise en place planning',
-      'Bestellijst',
-      'Personeelsinstructies',
-      'Seizoensadvies',
+      'Intake gesprek (1 uur)',
+      'AI-Readiness Score per gebied',
+      'Bedrijfsscan: menu, inkoop, personeel, marketing',
+      'Top-3 quick wins rapport',
+      'Concrete aanbevelingen met tools',
+      'Geschikt als losse dienst of als start van implementatie',
     ],
   },
   {
-    name: 'Uitgebreid',
-    price: '€1.750',
-    badge: 'Tot 10 gerechten',
+    name: 'Implementatie Basis',
+    price: '€1.950',
+    type: 'eenmalig',
     highlighted: true,
+    description: 'De drie gebieden die het meest opleveren — ingericht en werkend.',
     features: [
-      '1 menukaart + variantkaarten',
-      'Receptuurkaarten per gerecht',
-      'Kostprijsberekening + food cost',
-      'Verkoopprijsadvies',
-      'Mise en place planning',
-      'Bestellijst',
-      'Personeelsinstructies',
-      'Seizoensadvies',
-      'Menu-engineering advies',
+      'Alles uit Quick Scan',
+      '3 tools volledig ingericht',
+      'Promptbibliotheek op maat',
+      'Hands-on training (1 sessie)',
+      'Handleiding per tool',
+      'WhatsApp support eerste 2 weken',
     ],
   },
   {
-    name: 'XL',
-    price: '€2.500',
-    badge: 'Tot 16 gerechten',
+    name: 'Implementatie Compleet',
+    price: '€3.500',
+    type: 'eenmalig',
     highlighted: false,
+    description: 'Volledige AI-transformatie van je operatie.',
     features: [
-      '2 menukaarten + variantkaarten',
-      'Receptuurkaarten per gerecht',
-      'Kostprijsberekening + food cost',
-      'Verkoopprijsadvies',
-      'Mise en place planning',
-      'Bestellijst',
-      'Personeelsinstructies',
-      'Seizoensadvies',
-      'Menu-engineering advies',
-      'PIN-ON advies per kaart',
+      'Alles uit Basis',
+      'Alle 4 gebieden ingericht',
+      'Kostprijs-template (Google Sheets)',
+      'Digitaal keukenhandboek',
+      '2 trainingssessies (eigenaar + team)',
+      '1 maand WhatsApp/mail support',
+      'Resultaatmeting na 4 weken',
     ],
   },
 ];
@@ -63,10 +58,11 @@ export default function Pricing() {
             [ Investering ]
           </p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white font-bold tracking-tight mb-4">
-            Helder. Voorspelbaar. Op waarde.
+            Drie pakketten. Nul verrassingen.
           </h2>
           <p className="text-white/40 font-sans text-lg max-w-xl mx-auto">
-            Vaste pakketprijzen per kwartaal. Geen uurtje-factuurtje. Je weet vooraf wat je betaalt en wat je krijgt.
+            Start klein met een Quick Scan, of ga direct voor de volledige implementatie.
+            Elke euro is vooraf helder.
           </p>
         </div>
 
@@ -76,7 +72,7 @@ export default function Pricing() {
               key={plan.name}
               className={`relative p-8 transition-all ${
                 plan.highlighted
-                  ? 'border-2 border-gold bg-gold/[0.03] lg:-mt-4 lg:mb-0'
+                  ? 'border-2 border-gold bg-gold/[0.03] lg:-mt-4'
                   : 'border border-white/[0.06] bg-night-200/50'
               }`}
             >
@@ -88,19 +84,19 @@ export default function Pricing() {
                 </div>
               )}
 
-              <div className="text-center mb-8">
-                <h3 className="font-heading text-xl font-semibold text-white mb-4">
+              <div className="mb-8">
+                <h3 className="font-heading text-xl font-semibold text-white mb-2">
                   {plan.name}
                 </h3>
-                <div className="mb-2">
+                <p className="text-white/30 font-sans text-sm mb-4">
+                  {plan.description}
+                </p>
+                <div className="mb-1">
                   <span className="font-heading text-4xl md:text-5xl font-bold text-white">
                     {plan.price}
                   </span>
                 </div>
-                <p className="text-white/30 text-sm font-sans">excl. BTW / per kwartaal</p>
-                <span className="inline-block mt-3 text-gold text-xs font-semibold font-sans border border-gold/20 px-3 py-1">
-                  {plan.badge}
-                </span>
+                <p className="text-white/20 text-sm font-sans">excl. BTW / {plan.type}</p>
               </div>
 
               <ul className="space-y-3 mb-8">
@@ -120,32 +116,33 @@ export default function Pricing() {
                     : 'border border-white/10 text-white/60 hover:border-gold/30 hover:text-gold'
                 }`}
               >
-                Neem contact op
+                {plan.name === 'Quick Scan' ? 'Boek een Quick Scan' : 'Neem contact op'}
                 <ArrowRight size={14} />
               </a>
             </div>
           ))}
         </div>
 
-        {/* Extra's */}
-        <div className="mt-8 border border-white/[0.06] bg-night-200/30 p-6 text-center">
-          <p className="text-white/40 font-sans text-sm">
-            <span className="text-white/70 font-semibold">Extra gerecht:</span> €100
-            <span className="mx-3 text-white/10">|</span>
-            <span className="text-white/70 font-semibold">Extra menukaart:</span> €350
-            <span className="mx-3 text-white/10">|</span>
-            <span className="text-white/70 font-semibold">Spoed (&lt;2 weken):</span> +25%
-          </p>
-        </div>
-
-        {/* Jaarcontract */}
-        <div className="mt-4 border border-gold/10 bg-gold/[0.02] p-6 text-center">
-          <p className="text-white font-heading text-lg font-semibold mb-1">
-            Jaarcontract — 4 seizoenen, nul stress
-          </p>
-          <p className="text-white/40 font-sans text-sm">
-            Voorspelbaar budget, diepere samenwerking, korting. De meeste klanten kiezen hiervoor.
-          </p>
+        {/* Onderhoud */}
+        <div className="mt-8 border border-gold/10 bg-gold/[0.02] p-8">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <p className="text-white font-heading text-lg font-semibold mb-1">
+                Kwartaalonderhoud — €750 per kwartaal
+              </p>
+              <p className="text-white/40 font-sans text-sm max-w-xl">
+                Nieuwe tools evalueren, prompts updaten, seizoensupdates doorvoeren.
+                Je AI-setup blijft actueel en effectief. Optioneel na elk implementatietraject.
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="flex-shrink-0 inline-flex items-center gap-2 border border-gold/30 text-gold font-sans text-sm font-medium px-6 py-3 hover:bg-gold/5 transition-colors"
+            >
+              Meer info
+              <ArrowRight size={14} />
+            </a>
+          </div>
         </div>
       </div>
     </section>

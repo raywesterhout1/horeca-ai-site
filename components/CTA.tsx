@@ -3,10 +3,8 @@ import { ArrowRight } from 'lucide-react';
 export default function CTA() {
   return (
     <section id="contact" className="relative py-24 px-6 bg-night overflow-hidden">
-      {/* Background accent */}
       <div className="absolute inset-0 bg-gradient-to-br from-gold/[0.03] via-transparent to-gold/[0.02] pointer-events-none" />
 
-      {/* Grid pattern */}
       <div className="absolute inset-0 opacity-[0.02]" style={{
         backgroundImage: 'linear-gradient(rgba(200,164,92,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(200,164,92,0.5) 1px, transparent 1px)',
         backgroundSize: '40px 40px',
@@ -17,14 +15,14 @@ export default function CTA() {
           [ Start hier ]
         </p>
 
-        {/* Tibor-style confronterend */}
         <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-6 leading-tight tracking-tight">
-          Wachten kost je<br />elk seizoen geld.
+          Elke week dat je wacht,<br />
+          verlies je uren.
         </h2>
 
         <p className="text-white/40 text-lg md:text-xl mb-12 max-w-xl mx-auto leading-relaxed font-sans">
-          Eén gesprek. Geen verplichtingen. Wel duidelijkheid over wat AI
-          voor jouw restaurant kan betekenen.
+          Begin met een Quick Scan. In een uur weet je precies waar AI jouw zaak
+          het meest oplevert. Geen verplichtingen. Wel duidelijkheid.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -32,14 +30,14 @@ export default function CTA() {
             href="mailto:info@raymondwesterhout.nl"
             className="inline-flex items-center gap-2 bg-gold text-night font-heading font-semibold px-8 py-4 hover:bg-gold-light transition-colors text-base"
           >
-            Plan een gesprek
+            Boek een Quick Scan
             <ArrowRight className="w-5 h-5" />
           </a>
           <a
             href="mailto:info@raymondwesterhout.nl"
             className="inline-flex items-center gap-2 border border-white/10 text-white/60 font-sans font-medium px-8 py-4 hover:border-gold/30 hover:text-gold transition-all text-base"
           >
-            Stuur een e-mail
+            Stel een vraag
           </a>
         </div>
 

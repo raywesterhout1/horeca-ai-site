@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-night px-6 pt-24 pb-16 overflow-hidden">
-      {/* Background grid pattern */}
+      {/* Background grid */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: 'linear-gradient(rgba(200,164,92,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(200,164,92,0.5) 1px, transparent 1px)',
         backgroundSize: '60px 60px',
@@ -21,18 +21,18 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Main heading — Tibor style: direct, confronterend */}
+        {/* Heading */}
         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-[1.05] mb-8 tracking-tight">
-          Jouw keuken draait<br />
-          op onderbuikgevoel.<br />
-          <span className="text-gold">Dat kost je geld.</span>
+          5 tot 10 uur per week<br />
+          terug in je zaak.<br />
+          <span className="text-gold">Door AI het zware werk te laten doen.</span>
         </h1>
 
-        {/* Subtitle — kort, punchy */}
+        {/* Subtitle */}
         <p className="font-sans text-lg sm:text-xl text-white/40 max-w-2xl leading-relaxed mb-12">
-          AI rekent sneller dan jouw beste kok. Recepturen, kostprijzen,
-          bestellijsten, menukaarten — compleet opgeleverd. Geen weken werk.
-          Geen fouten. Geen excuses.
+          Receptuurbeheer, kostprijsberekening, marketing, personeelstraining — de
+          tools bestaan al. Je hoeft ze alleen in te stellen. Dat doe ik voor je. In
+          4 tot 6 weken draait je zaak slimmer, niet harder.
         </p>
 
         {/* CTAs */}
@@ -41,32 +41,32 @@ export default function Hero() {
             href="#contact"
             className="inline-flex items-center justify-center gap-2 bg-gold text-night font-heading text-sm font-semibold tracking-wide px-8 py-4 hover:bg-gold-light transition-colors duration-200"
           >
-            Plan een gesprek
+            Plan een vrijblijvend gesprek
             <ArrowRight size={16} />
           </a>
           <a
             href="#diensten"
             className="inline-flex items-center justify-center gap-2 border border-white/10 text-white/60 font-sans text-sm font-medium tracking-wide px-8 py-4 hover:border-gold/30 hover:text-gold transition-all duration-200"
           >
-            Bekijk wat AI oplevert
+            Bekijk de vier gebieden
           </a>
         </div>
 
-        {/* Social proof line */}
+        {/* Proof line */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-wrap gap-8 items-center">
           <div className="flex items-baseline gap-2">
             <span className="font-heading text-2xl font-bold text-gold">20+</span>
-            <span className="text-white/30 text-sm font-sans">jaar keukenervaring</span>
+            <span className="text-white/30 text-sm font-sans">jaar horeca-ervaring</span>
           </div>
           <div className="w-px h-6 bg-white/10 hidden sm:block" />
           <div className="flex items-baseline gap-2">
-            <span className="font-heading text-2xl font-bold text-gold">10x</span>
-            <span className="text-white/30 text-sm font-sans">sneller dan handwerk</span>
+            <span className="font-heading text-2xl font-bold text-gold">4-6</span>
+            <span className="text-white/30 text-sm font-sans">weken implementatie</span>
           </div>
           <div className="w-px h-6 bg-white/10 hidden sm:block" />
           <div className="flex items-baseline gap-2">
-            <span className="font-heading text-2xl font-bold text-gold">100%</span>
-            <span className="text-white/30 text-sm font-sans">doorgerekend</span>
+            <span className="font-heading text-2xl font-bold text-gold">2-4%</span>
+            <span className="text-white/30 text-sm font-sans">food cost reductie</span>
           </div>
         </div>
       </div>

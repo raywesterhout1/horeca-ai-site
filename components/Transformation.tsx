@@ -1,21 +1,21 @@
 import { ArrowRight, X, Check } from 'lucide-react';
 
 const before = [
-  '40+ uur per seizoenswisseling',
+  'Recepten in je hoofd of op losse briefjes',
   'Kostprijzen schatten op gevoel',
-  'Recepten in je hoofd',
-  'Bestellijsten op een bierviltje',
-  'Nieuwe kok? Alles opnieuw uitleggen',
-  'Food cost? Geen idee',
+  'Social media? Komt morgen wel',
+  'Nieuwe medewerker = weken inwerken',
+  'Bestellijsten op de achterkant van een bon',
+  'Reviews onbeantwoord laten liggen',
 ];
 
 const after = [
-  'Complete oplevering in 3-5 dagen',
-  'Elke kostprijs tot op de cent doorgerekend',
-  'Professionele receptuurkaarten',
-  'Geïntegreerde bestellijsten',
-  'Personeelsinstructies per service',
-  'Food cost per gerecht, per portie',
+  'Doorzoekbare digitale receptenbank met AI-variaties',
+  'Automatische kostprijsberekening per gerecht',
+  'Captions, omschrijvingen en posts in minuten',
+  'Digitaal keukenhandboek — print en klaar',
+  'Geïntegreerde bestellijsten vanuit recepturen',
+  'Professionele reviewreacties in seconden',
 ];
 
 export default function Transformation() {
@@ -27,10 +27,11 @@ export default function Transformation() {
             [ De shift ]
           </p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-white font-bold tracking-tight mb-4">
-            Van chaos naar controle.
+            Zelfde team. Zelfde keuken.<br />
+            Andere aanpak.
           </h2>
           <p className="text-white/40 font-sans text-lg max-w-xl mx-auto">
-            Wat jij in weken doet, levert AI op in dagen. Beter. Completer. Foutloos.
+            AI vervangt je team niet. Het haalt het saaie, repetitieve werk van hun bord.
           </p>
         </div>
 
@@ -40,7 +41,7 @@ export default function Transformation() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-3 h-3 bg-red-500/60 rounded-full" />
               <span className="font-heading text-sm font-semibold text-red-400/80 tracking-wide uppercase">
-                Zonder AI
+                Nu — op gevoel
               </span>
             </div>
             <ul className="space-y-4">
@@ -60,7 +61,7 @@ export default function Transformation() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-3 h-3 bg-gold rounded-full" />
               <span className="font-heading text-sm font-semibold text-gold tracking-wide uppercase">
-                Met AI
+                Straks — met AI
               </span>
             </div>
             <ul className="space-y-4">
@@ -81,7 +82,7 @@ export default function Transformation() {
             href="#diensten"
             className="inline-flex items-center gap-2 text-gold font-sans text-sm font-medium hover:text-gold-light transition-colors"
           >
-            Bekijk precies wat je krijgt
+            Bekijk de vier gebieden
             <ArrowRight size={14} />
           </a>
         </div>

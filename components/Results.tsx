@@ -1,38 +1,50 @@
 const stats = [
   {
-    value: '10x',
-    label: 'Sneller',
-    description: 'Wat normaal 40+ uur kost, is in dagen klaar.',
+    value: '5-10',
+    unit: 'uur/week',
+    label: 'Tijdsbesparing',
+    description: 'Minder handwerk aan recepten, lijsten, social media en inwerken.',
   },
   {
-    value: '€0',
-    label: 'Fouten',
-    description: 'Elke kostprijs doorgerekend. Geen schattingen.',
+    value: '2-4%',
+    unit: '',
+    label: 'Food cost reductie',
+    description: 'Door data-driven pricing en automatische kostprijsberekening.',
   },
   {
-    value: '100%',
-    label: 'Compleet',
-    description: 'Recepturen, kostprijzen, mise en place, bestellijsten — alles.',
+    value: '4-6',
+    unit: 'weken',
+    label: 'Implementatietijd',
+    description: 'Van intake tot volledig draaiend. Geen maandenlang traject.',
   },
   {
-    value: '4x',
-    label: 'Per jaar',
-    description: 'Elk seizoen een nieuw menu. Gegarandeerd.',
+    value: '1',
+    unit: 'dag',
+    label: 'Inwerktijd nieuw personeel',
+    description: 'Met digitaal handboek en meertalige instructies.',
   },
 ];
 
-const examples = [
+const outcomes = [
   {
-    client: 'Upscale restaurant',
-    scope: 'Dinerkaart + lunchkaart + borrelkaart',
-    result: '22 nieuwe gerechten, 12 varianten, 3 complete menukaarten',
-    delivery: '5 werkdagen',
+    area: 'Receptuurenbeheer',
+    before: 'Recepten in hoofden en op briefjes',
+    after: 'Doorzoekbare database, AI-variaties, standaard formats',
   },
   {
-    client: 'Event locatie',
-    scope: 'Walking dinner regulier + vegetarisch',
-    result: '5 gangen, beide varianten, volledig mise en place',
-    delivery: '3 werkdagen',
+    area: 'Kostprijs & Food Cost',
+    before: 'Schatten op gevoel, marges onbekend',
+    after: 'Live dashboard, automatische berekening, prijsadvies per gerecht',
+  },
+  {
+    area: 'Marketing',
+    before: '1x per maand iets posten als het uitkomt',
+    after: 'Consistente content met AI-captions, templates en scheduling',
+  },
+  {
+    area: 'Personeel',
+    before: 'Weken inwerken, alles mondeling',
+    after: 'Digitaal handboek, meertalig, print-en-klaar',
   },
 ];
 
@@ -45,19 +57,24 @@ export default function Results() {
         </p>
 
         <h2 className="font-heading text-3xl md:text-4xl text-white font-bold mb-16 tracking-tight">
-          Cijfers liegen niet.
+          Wat het oplevert. Concreet.
         </h2>
 
-        {/* Stats grid */}
+        {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
           {stats.map((stat) => (
             <div
               key={stat.label}
               className="border border-white/[0.06] bg-night-200/50 p-6 text-center"
             >
-              <span className="font-heading text-4xl md:text-5xl font-bold text-gold-gradient text-gold block mb-2">
-                {stat.value}
-              </span>
+              <div className="mb-2">
+                <span className="font-heading text-3xl md:text-4xl font-bold text-gold">
+                  {stat.value}
+                </span>
+                {stat.unit && (
+                  <span className="font-sans text-sm text-gold/50 ml-1">{stat.unit}</span>
+                )}
+              </div>
               <span className="font-heading text-sm font-semibold text-white uppercase tracking-wide block mb-2">
                 {stat.label}
               </span>
@@ -68,31 +85,32 @@ export default function Results() {
           ))}
         </div>
 
-        {/* Case examples */}
+        {/* Before/After per area */}
         <h3 className="font-heading text-xl text-white font-semibold mb-8">
-          In de praktijk
+          Per gebied: voor en na
         </h3>
 
-        <div className="grid md:grid-cols-2 gap-4">
-          {examples.map((example) => (
+        <div className="space-y-3">
+          {outcomes.map((outcome) => (
             <div
-              key={example.client}
-              className="border border-gold/10 bg-gold/[0.02] p-8"
+              key={outcome.area}
+              className="grid md:grid-cols-[200px_1fr_1fr] gap-4 border border-white/[0.04] bg-night-200/30 p-5 items-start"
             >
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-heading text-sm font-semibold text-gold uppercase tracking-wide">
-                  {example.client}
+              <span className="font-heading text-sm font-semibold text-gold">
+                {outcome.area}
+              </span>
+              <div>
+                <span className="text-red-400/40 text-[10px] uppercase tracking-wider font-sans block mb-1">
+                  Voor
                 </span>
-                <span className="text-gold/50 text-xs font-sans border border-gold/20 px-2 py-0.5">
-                  {example.delivery}
-                </span>
+                <p className="text-white/30 font-sans text-sm">{outcome.before}</p>
               </div>
-              <p className="text-white/60 font-sans text-sm mb-2">
-                <span className="text-white/30">Scope:</span> {example.scope}
-              </p>
-              <p className="text-white/60 font-sans text-sm">
-                <span className="text-white/30">Resultaat:</span> {example.result}
-              </p>
+              <div>
+                <span className="text-gold/50 text-[10px] uppercase tracking-wider font-sans block mb-1">
+                  Na
+                </span>
+                <p className="text-white/60 font-sans text-sm">{outcome.after}</p>
+              </div>
             </div>
           ))}
         </div>

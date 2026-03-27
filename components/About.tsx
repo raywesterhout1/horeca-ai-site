@@ -7,68 +7,88 @@ export default function About() {
         </p>
 
         <h2 className="font-heading text-3xl md:text-4xl text-white font-bold mb-16 tracking-tight">
-          Geen bureau. Geen theoreticus.<br />
-          Een chef die AI inzet.
+          Geen techbedrijf.<br />
+          Een chef die AI spreekt.
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Text column */}
           <div className="space-y-6">
             <p className="text-white/60 font-sans text-base leading-relaxed">
-              20+ jaar in de keuken. Van sterrenrestaurants tot brasseries, van
-              walking dinners tot seizoensmenus. Ik weet wat werkt op het bord en
-              wat klopt in de calculatie.
+              Ik ben Raymond Westerhout. 20+ jaar in de keuken. Van sterrenrestaurants
+              tot brasseries, van walking dinners tot seizoensmenus. Ik weet hoe een
+              keuken werkt — en waar het vastloopt.
             </p>
             <p className="text-white/60 font-sans text-base leading-relaxed">
-              Maar ik doe het niet meer met de hand. Ik gebruik AI om in dagen te
-              leveren waar anderen weken over doen. Dezelfde kwaliteit. Dezelfde
-              diepgang. Tien keer sneller.
+              Ik gebruik AI niet als buzzword. Ik gebruik het dagelijks. Voor
+              recepturenbanken, kostprijsberekeningen, personeelsinstructies,
+              contentcreatie. Niet omdat het hip is, maar omdat het werkt.
             </p>
             <p className="text-white/60 font-sans text-base leading-relaxed">
-              Recepturen, kostprijzen, mise en place, bestellijsten, personeelsinstructies
-              — compleet opgeleverd. Niet vanuit een kantoor, maar vanuit keukenervaring.
+              Wat ik voor mijn eigen klanten bouw, implementeer ik nu voor jouw
+              restaurant. Dezelfde tools, dezelfde aanpak — afgestemd op jouw zaak,
+              jouw team en jouw werkwijze.
             </p>
             <p className="text-white/60 font-sans text-base leading-relaxed">
-              Geen PowerPoints. Geen vage adviezen. Documenten die je team morgen
-              kan gebruiken.
+              Geen generieke AI-workshop. Geen PowerPoint met vage beloftes.
+              Geconfigureerde tools, werkende prompts, en een team dat ermee kan
+              werken. Dat is wat je krijgt.
             </p>
 
-            {/* Tibor-style punch */}
             <div className="border-l-2 border-gold pl-6 mt-8">
               <p className="font-heading text-lg text-white font-semibold">
-                &ldquo;AI is geen vervanging van vakmanschap.
-                Het is de versnelling die vakmanschap schaalt.&rdquo;
+                &ldquo;AI vervangt je vakmanschap niet. Het haalt het saaie werk
+                van je bord zodat je kunt doen waar je goed in bent.&rdquo;
               </p>
               <p className="text-gold/60 text-sm font-sans mt-2">— Raymond Westerhout</p>
             </div>
           </div>
 
-          {/* Stats card */}
+          {/* Unique position card */}
           <div className="border border-gold/10 bg-night/80 p-8">
-            <div className="grid grid-cols-2 gap-8">
-              <div className="text-center p-4 border border-white/[0.04]">
-                <p className="font-heading text-3xl font-bold text-gold mb-1">20+</p>
-                <p className="text-white/30 text-xs font-sans">jaar keukenervaring</p>
-              </div>
-              <div className="text-center p-4 border border-white/[0.04]">
-                <p className="font-heading text-3xl font-bold text-gold mb-1">AI</p>
-                <p className="text-white/30 text-xs font-sans">als dagelijks gereedschap</p>
-              </div>
-              <div className="text-center p-4 border border-white/[0.04]">
-                <p className="font-heading text-3xl font-bold text-gold mb-1">3-5</p>
-                <p className="text-white/30 text-xs font-sans">dagen levertijd</p>
-              </div>
-              <div className="text-center p-4 border border-white/[0.04]">
-                <p className="font-heading text-3xl font-bold text-gold mb-1">4</p>
-                <p className="text-white/30 text-xs font-sans">seizoenen per jaar</p>
-              </div>
-            </div>
+            <h3 className="font-heading text-sm font-semibold text-gold uppercase tracking-wide mb-6">
+              Waarom ik dit doe
+            </h3>
 
-            <div className="mt-6 pt-6 border-t border-white/[0.04]">
-              <p className="text-white/30 font-sans text-xs leading-relaxed text-center">
-                Actieve klanten: upscale restaurants, event locaties, brasseries.
-                Menuontwikkeling als service — elk kwartaal opnieuw.
-              </p>
+            <div className="space-y-6">
+              <div className="border-b border-white/[0.04] pb-4">
+                <p className="text-white font-sans text-sm font-medium mb-1">
+                  Ik ken de keuken
+                </p>
+                <p className="text-white/30 font-sans text-sm">
+                  20 jaar ervaring. Ik weet welke tools werken in de praktijk —
+                  niet alleen in een demo.
+                </p>
+              </div>
+
+              <div className="border-b border-white/[0.04] pb-4">
+                <p className="text-white font-sans text-sm font-medium mb-1">
+                  Ik gebruik AI dagelijks
+                </p>
+                <p className="text-white/30 font-sans text-sm">
+                  Receptuurkaarten, kostprijzen, menukaarten, bestellijsten — ik
+                  maak het elke week met AI voor echte klanten.
+                </p>
+              </div>
+
+              <div className="border-b border-white/[0.04] pb-4">
+                <p className="text-white font-sans text-sm font-medium mb-1">
+                  Ik implementeer, niet alleen adviseer
+                </p>
+                <p className="text-white/30 font-sans text-sm">
+                  Je krijgt geen rapport met aanbevelingen. Je krijgt werkende
+                  tools, prompts en een getraind team.
+                </p>
+              </div>
+
+              <div>
+                <p className="text-white font-sans text-sm font-medium mb-1">
+                  Ik spreek horeca, niet tech
+                </p>
+                <p className="text-white/30 font-sans text-sm">
+                  Geen jargon. Geen complexe dashboards. Praktische tools die je
+                  team morgen kan gebruiken.
+                </p>
+              </div>
             </div>
           </div>
         </div>
