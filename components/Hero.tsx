@@ -38,10 +38,12 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="#contact"
+            href="https://horeca-ai-score.vercel.app/quiz"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-gold text-night font-heading text-sm font-semibold tracking-wide px-8 py-4 hover:bg-gold-light transition-colors duration-200"
           >
-            Plan een vrijblijvend gesprek
+            Doe de gratis AI-scan
             <ArrowRight size={16} />
           </a>
           <a

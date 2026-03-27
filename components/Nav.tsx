@@ -46,10 +46,12 @@ export default function Nav() {
         </ul>
 
         <a
-          href="#contact"
+          href="https://horeca-ai-score.vercel.app/quiz"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 bg-gold text-night text-sm font-semibold px-5 py-2.5 hover:bg-gold-light transition-colors"
         >
-          Start hier
+          Gratis AI-scan
         </a>
 
         <button
@@ -77,11 +79,13 @@ export default function Nav() {
             ))}
             <li>
               <a
-                href="#contact"
+                href="https://horeca-ai-score.vercel.app/quiz"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="inline-flex items-center gap-2 bg-gold text-night text-sm font-semibold px-5 py-2.5 mt-2"
               >
-                Start hier
+                Gratis AI-scan
               </a>
             </li>
           </ul>

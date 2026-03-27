@@ -27,10 +27,12 @@ export default function CTA() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <a
-            href="mailto:info@raymondwesterhout.nl"
+            href="https://horeca-ai-score.vercel.app/quiz"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gold text-night font-heading font-semibold px-8 py-4 hover:bg-gold-light transition-colors text-base"
           >
-            Boek een Quick Scan
+            Doe de gratis AI-scan
             <ArrowRight className="w-5 h-5" />
           </a>
           <a

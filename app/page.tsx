@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Problem from '@/components/Problem';
 import Transformation from '@/components/Transformation';
 import Services from '@/components/Services';
+import Quiz from '@/components/Quiz';
 import Process from '@/components/Process';
 import Results from '@/components/Results';
 import Pricing from '@/components/Pricing';
@@ -18,6 +19,7 @@ export default function Home() {
       <Problem />
       <Transformation />
       <Services />
+      <Quiz />
       <Process />
       <Results />
       <Pricing />
