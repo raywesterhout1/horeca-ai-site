@@ -36,7 +36,7 @@ export default function CTA() {
             <ArrowRight className="w-5 h-5" />
           </a>
           <a
-            href="mailto:info@raymondwesterhout.nl"
+            href="mailto:hallo@aivoorhoreca.nl"
             className="inline-flex items-center gap-2 border border-white/10 text-white/60 font-sans font-medium px-8 py-4 hover:border-gold/30 hover:text-gold transition-all text-base"
           >
             Stel een vraag
@@ -44,8 +44,8 @@ export default function CTA() {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-6 text-white/30 text-sm font-sans">
-          <a href="mailto:info@raymondwesterhout.nl" className="hover:text-gold transition-colors">
-            info@raymondwesterhout.nl
+          <a href="mailto:hallo@aivoorhoreca.nl" className="hover:text-gold transition-colors">
+            hallo@aivoorhoreca.nl
           </a>
           <span className="text-white/10">|</span>
           <span>Reactie binnen 24 uur</span>
